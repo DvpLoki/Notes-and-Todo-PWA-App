@@ -11,10 +11,10 @@ body {
 }
 
 ::-webkit-scrollbar {
-  @apply w-2;
+  @apply w-1;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#555] rounded-md;
+  @apply bg-[#c7b229] rounded-md;
 }
 ::-webkit-scrollbar-track {
   @apply bg-transparent;

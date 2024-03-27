@@ -9,7 +9,7 @@ export const Sidebar = ({
   return (
     <aside
       className={twMerge(
-        "w-[300px]  h-[100vh + 10px] overflow-auto",
+        "sm:w-[250px] md:w-[300px] w-full h-screen overflow-auto",
         className
       )}
       {...props}>
@@ -24,7 +24,7 @@ export const Content = ({
   ...props
 }: ComponentProps<"div">) => {
   return (
-    <div className={twMerge("flex-1 overflow-auto", className)} {...props}>
+    <div className={twMerge("sm:flex-1 overflow-auto", className)} {...props}>
       {children}
     </div>
   );
@@ -36,7 +36,9 @@ export const RootLayout = ({
   ...props
 }: ComponentProps<"main">) => {
   return (
-    <main className={twMerge("flex flex-row h-screen", className)} {...props}>
+    <main
+      className={twMerge("sm:flex sm:flex-row  sm:h-screen", className)}
+      {...props}>
       {children}
     </main>
   );

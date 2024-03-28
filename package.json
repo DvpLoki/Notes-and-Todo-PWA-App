@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "docker-build": "docker build -t notes-app-dev:v1 .",
+    "docker-run": "docker run -p 5173:5173 notes-app-dev:v1",
     "build": "tsc && vite build",
-    "serve": "PORT=4433 serve dist",
+    "serve": " serve dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 8080"
   },
